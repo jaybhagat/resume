@@ -1,0 +1,161 @@
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[outline]{contour}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+
+\usepackage[dvipsnames]{xcolor}
+\colorlet{LightMidnightBlue}{MidnightBlue!20!}
+\colorlet{MidMidnightBlue}{MidnightBlue!50!}
+
+% Colours and different styles
+\urlstyle{same}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjusting margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-0.375in}
+\addtolength{\textheight}{0.7in}
+
+%-----------------------------------------------------
+
+% Custom commands
+\newcommand{\myitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{LightMidnightBlue}{\begin{minipage}{\textwidth}{\textbf{\textrm{#1 \vphantom{p\^{E}}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textcolor{gray}{#2} \\
+		\textit{#3} & \textcolor{gray}{\textit{#4}} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+
+%-----------------------------------------------------
+
+\begin{document}
+
+\begin{center} % maybe change fonts
+    \header{\Huge{\textbf{JAY \textcolor{MidMidnightBlue}{BHAGAT}}}} \\
+    
+    \vspace{2mm}
+    \large{1B \textcolor{MidnightBlue}{\textbf{Computer Science}} Student}
+    \vspace{2mm}
+
+\sffamily
+
+\begin{tabular}{c c c c}
+    \begin{warpfigure}{}{\textwidth}
+    \begin{center}
+            \includegraphics[width=0.03\textwidth]{gmail.jpg}
+    \end{center}
+    \caption{\href{mailto:jbhagat@uwaterloo.ca}{jbhagat@uwaterloo.ca}}
+    \end{warpfigure} \enspace
+    & \begin{warpfigure}{}{\textwidth}
+    \begin{center}
+        \includegraphics[width=0.03\textwidth]{phone.png}
+    \end{center}
+    \caption{\href{tel:14167050271}{+1 416-705-0271}}
+    \end{warpfigure} \enspace
+    & \begin{warpfigure}{}{\textwidth}
+    \begin{center}
+        \includegraphics[width=0.03\textwidth]{github.jpg}
+    \end{center}
+    \caption{\href{https://github.com/jaybhagat}{jaybhagat}}
+    \end{warpfigure} \enspace
+    & \begin{warpfigure}{}{\textwidth}
+    \begin{center}
+        \includegraphics[width=0.03\textwidth]{website.png}
+    \end{center}
+    \caption{\href{www.jaybhagat.github.io}{www.jaybhagat.github.io}}
+    \end{warpfigure} 
+\end{tabular}
+\end{center}
+
+\sffamily
+
+\hline
+
+\vspace{2.5mm}
+
+\resheading{Skills}
+
+\vspace{2.5mm}
+
+\textbf{Languages:} \textit{Java, Racket, C,} JavaScript, HTML/CSS \\
+\vspace{1.75mm}
+\textbf{Technologies:} React.js, Git, Node.js, \LaTeX, PostgreSQL
+
+\vspace{2.5mm}
+
+\resheading{Projects}
+
+\vspace{2.5mm}
+
+\textbf{Personal Website:} Used React.js with HTML/CSS and JavaScript to build my own personal website to display my portfolio. \\
+
+\vspace{2mm}
+
+\textbf{Brick Breaker:} Applied principles of Object-Oriented Programming to make a throwback version of Brick Breaker using Java.
+
+\vspace{2.5mm}
+
+\resheading{Experience}
+
+% agile software development, start-up environment, general knowledge of working in an environment - talk about that stuff; explain what you did learn - complex codebase, especially it being in React.js - expand on this (SPA) - git (talk about learning it) DONT GET CHOKED ON THE Q - RMBR WHAT YOU LEARNT
+\vspace{2.5mm}
+
+    \ressubheading{The EPOCH App}{Waterloo, ON}{Software Developing Intern}{Feb. 2019 - Apr. 2019}
+        \begin{itemize}
+            \item Implemented parts of the EPOCH website using the React.js library to improve its UX/UI design to attract users
+            \item Applied source links to the different pages of The EPOCH App to make the website more efficient
+            \item Effectively managed code repositories with Git and GitHub
+        \end{itemize}
+
+    \ressubheading{City of Brampton}{Brampton, ON}{Seasonal Camp Counselor \& Preschool Instructor}{Mar. 2018 - Aug. 2019}
+        \begin{itemize}
+            \item Supervising over 60 participants (ranging from 3 to 13 years old) with a team of 3 other counselors to ensure their safety
+            \item Designed activities for participants to develop their problem solving and motor skills as commented on by numerous parents
+            \item Integrated participants with disabilities with the remainder of the camp (or class) through activities as evidenced by their increasing social circles
+        \end{itemize}
+    
+    \ressubheading{TFSS HOSA}{Brampton, ON}{Vice-president of Education}{July 2017 - June 2019}
+    \begin{itemize}
+        \item Lead a team of 14 Training Coordinators to develop a strategy to teach required content to 120 high school students from which 35 were part of the Top 10 Participants in their respective events
+        \item Organized a completely new educational structure for the TFSS HOSA chapter which improved the communication standards between the students participating in the events and their Training Coordinators
+    \end{itemize}
+
+\resheading{Education}
+
+\vspace{2.5mm}
+
+\ressubheading{University of Waterloo}{Waterloo, ON}{Candidate for Bachelor in Computer Science, Honours (GPA 3.96)}{Sept. 2019 - May 2024}
+
+\begin{itemize}
+    \item President's Scholarship (95\%+)
+    \item CPL Academic Scholarship Winner
+\end{itemize}
+
+\ressubheading{Turner Fenton Secondary School}{Brampton, ON}{IB Diploma \& OSSD (99.2\% University Admissions Average)}{Sept. 2015 - June 2019}
+
+\end{document}

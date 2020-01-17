@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4
+\usepackage{amssymb}
+\defaultfontfeatures{Path = /usr/local/texlive/2014basic/texmf-dist/tex/latex/fontawesome/}
+\usepackage{fontawesome}
+
+\begin{document}
+\newcommand{\addmargin}{\vspace{2mm}}
+\newcommand{\addmarginbetween}{\vspace{4mm}}
+\newcommand{\lastmargin}{\vspace{0.5mm}}
+\definecolor{black}{HTML}{000000} \definecolor{blue}{HTML}{4285F4}
+\definecolor{red}{HTML}{EA4335}
+\definecolor{green}{HTML}{34A853}
+\definecolor{googleYellow}{HTML}{FBBC05}
+\definecolor{uberColor}{HTML}{4F5354}
+\renewcommand{\labelitemi}{\color{black}\scalebox{.5}{$\blacksquare$}}
+\renewcommand{\baselinestretch}{1.2}
+
+%------------------------------------------------
+% TITLE SECTION
+%------------------------------------------------
+
+\namesection{Ayush}{Bhagat} { % Your name
+  \faGlobe\hspace{3pt}\href{http://ayushbhagat.com}{ayushbhagat.com}\hspace{26pt}
+  \faEnvelope\hspace{3pt}\href{mailto:ayushbhagat@gmail.com}{ayushbhagat@gmail.com}\hspace{26pt}
+  \faGithub\hspace{3pt}\href{https://github.com/ayushbhagat}{ayushbhagat}\hspace{26pt}
+  \faLinkedin\hspace{3pt}\href{https://ca.linkedin.com/in/ayushbhagat}{ayushbhagat}
+}
+
+\begin{minipage}[t]{\textwidth}
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\ssection{Skills}
+\ssubsectionWithoutSpaceAtEnd{Languages}{JavaScript, Java, C++, Python}
+\hspace{25pt}\ssubsectionWithoutSpaceAtEnd{Other}{HTML, CSS, NPM, Webpack, Git, Vim, Tmux}\\
+\ssubsectionWithoutSpaceAtEnd{Frontend}{React, Redux, jQuery, Android}
+\hspace{28pt}\ssubsectionWithoutSpaceAtEnd{Backend}{Node.js, Express, PostgreSQL, MongoDB}\\
+\sectionspace
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+\ssection{Experience}
+
+%------------------------------------------------
+
+\jobSectionHeading{\color{uberColor}Uber}{Software Engineer, Intern}{Jan 2017 - Apr 2017 | Security}
+\vspace{4.2mm}
+\begin{tightitemize}
+\item Independently created an accounts management \boldit{React} \href{http://accounts.uber.com/profile}{app} used by \boldit{thousands} to edit their profile. \\
+\vspace{2pt}
+Check it out here:\href{http://accounts.uber.com/profile}{\boldit{accounts.uber.com/profile}}.
+\item Added Facebook Login to Uber's mobile website using \boldit{React} and \boldit{Express}.
+\item Helped architect frontend projects owned by the team and performed code reviews.
+\end{tightitemize}
+
+\sectionspace
+\addmarginbetween
+
+%------------------------------------------------
+
+\jobSectionHeading{\color{googleYellow}Snapchat}{Software Engineer, Intern}{May 2016 - Aug 2016 | Unlockables}
+\vspace{4.2mm}
+\begin{tightitemize}
+\item Individually created the community geofilters submission \href{https://www.snapchat.com/geofilters/submit.html}{page}, a \boldit{React} app used by \boldit{thousands}. \\
+\vspace{2pt}
+Check it out here:\href{https://www.snapchat.com/geofilters/submit.html}{\boldit{snapchat.com/geofilters/submit.html}}.
+\item Developed features using \boldit{ES6}, \boldit{React} and \boldit{Redux} for an internal tool used to manage unlockables.
+\item Implemented backend functionality for frontend features using \boldit{Java} and \boldit{Google Endpoints API}.
+\end{tightitemize}
+
+\sectionspace
+\addmarginbetween
+
+%------------------------------------------------
+
+\jobSectionHeading{\color{blue}G\color{red}o\color{googleYellow}o\color{blue}g\color{green}l\color{red}e}{Software Engineer, Intern}{Sep 2015 - Dec 2015 | Display Ads}
+\vspace{2mm}
+\color{black}
+\fontspec[Path = fonts/lato/]{Lato-Lig}
+\fontsize{9pt}{9pt}
+\begin{tightitemize}
+\item Developed for a high revenue, backend server-side system that serves \boldit{billions} of queries per day.
+\item Redesigned a critical component in the ad-serving infrastructure to increase speed and performance.
+\item Implemented my design in \boldit{C++11} and wrote unit tests with at least \boldit{80\%} code coverage.
+\end{tightitemize}
+
+\sectionspace
+\addmarginbetween
+
+%------------------------------------------------
+
+\jobSectionHeading{\color{blue}G\color{red}o\color{googleYellow}o\color{blue}g\color{green}l\color{red}e}{Software Engineer, Intern}{Jan 2015 - Apr 2015 | Shopping Now}
+\vspace{2mm}
+\color{black}
+\fontspec[Path = fonts/lato/]{Lato-Lig}
+\fontsize{9pt}{9pt}
+\begin{tightitemize}
+\item Performed data analytics and visualizations on big data to monitor user activity for Google Shopping.
+\item Created a \boldit{MapReduce} pipeline using \boldit{FlumeJava} to calculate aggregated statistics from \boldit{billions} of user data entries.
+\item Wrote and optimized \boldit{Dremel} queries that extract statistics from various tables to power dashboards, which are used by several teams within Google Shopping.
+\end{tightitemize}
+
+\sectionspace
+\vspace{-5mm}
+
+%------------------------------------------------
+% Projects
+%------------------------------------------------
+
+\ssection{Projects}
+\ssubsection{\href{https://github.com/uwblueprint/somo-react}{Somo (UW Blueprint)}}{Web tool for a Kenyan non-profit to create and send surveys through SMS.}\\
+\ssubsection{\href{https://github.com/DogWalkers/whiteboard}{Whiteboard (hackWaterloo)}}{Web app for developers to search and connect with other developers.}\\
+\vspace{-10pt}
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\ssection{Education}
+\sssubsection{University of Waterloo}{\itit{Bachelor in Software Engineering (BSE)}Expected April, 2018}\\
+\ssubsection{Awards}{Honours Dean's List All Terms\hspace{4pt}\itit{(89\% Average)}\hspace{-4pt}, President's Scholarship of Distinction}\\
+
+\end{minipage} % The end of the first page
+
+%------------------------------------------------
+% SECOND PAGE (EXAMPLE)
+%------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%------------------------------------------------
+
+\end{document}
